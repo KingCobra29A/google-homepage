@@ -1,21 +1,23 @@
-nav{
+nav.menu{
     width: 100%;
-    height: 100px;
-    margin:0px;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul{
     width: 100%;
-    margin: 5px;
-    display: block;
-    clear:both;
-    direction: rtl;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
 }
 
-li{
-    display:inline;
-    float: right;
-    margin: 5px;
+nav.menu ul li{
+    display: inline-block;
+}
+
+nav.menu ul.menu-right{
+    background-color: aqua;
 }
 
 a{
@@ -31,6 +33,8 @@ a:hover{
 }
 
 #container-div{
+    height: 90vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
